@@ -1,7 +1,7 @@
 # variables
 password_log = "bigfoot"
-username = input(str("Enter yer username kiddo"))
-password = input(str("Enter yo password son"))
+username = input(str("Enter yer username kiddo> "))
+password = input(str("Enter yo password son> "))
 
 # checking the password
 if password == password_log:
