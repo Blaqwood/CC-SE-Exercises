@@ -2,14 +2,15 @@
 country_area = int()
 population = int()
 country_name = str()
-pop_density = int()
+
 restart_program = str("Y")
 
 def country():
     country_area = input("What is the area of the country? ")
     population = input("How many people live there? ")
     country_name = input("What is the name of this country? ")
-    pop_density = (population / country_area)
+    # the line defining pop density is broken for some reason
+    pop_density = (int(population) / int(country_area))
     country_summ = ("""
     Country area: {c1}
     Country population: {c2}
