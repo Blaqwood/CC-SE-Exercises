@@ -2,7 +2,7 @@
 country_area = int()
 population = int()
 country_name = str()
-
+pop_density = int()
 restart_program = str("Y")
 
 def country():
