@@ -4,9 +4,9 @@
 int main() {
   std::string password_log = "bigfoot", password, username;
   
-  std::cout << "Enter your username\n";
+  std::cout << "Enter your username" << std::endl;
   std::cin >> username;
-  std::cout << "Enter your password\n";
+  std::cout << "Enter your password" << std::endl;
   std::cin >> password;
   
   if (password == password_log) {
