@@ -30,16 +30,16 @@ void country(int v1, int v2, std::string v3) {
 }
 
 //restart the program on prompt
-void resprog(bool &res) {
+void resprog(bool &i) {
     char x;
     std::cout << "Do you want to restart program? (Y/n)" << std::endl;
     std::cin >> x;
     if (x == 'y' || x == 'Y') {
-        res = true;
+        i = true;
         std::cout << "Restarting program" << std::endl << std::endl;
     }
     else {
-        res = false;
+        i = false;
         std::cout << "Terminating Program!" << std::endl;
     }    
 }
