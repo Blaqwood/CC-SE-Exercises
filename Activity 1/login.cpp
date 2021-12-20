@@ -5,29 +5,31 @@
 #include <string>
 #include <iostream>
 
+using namespace std;
+
 class Auth {
   public:
-    void passwordcheck(std::string uname, std::string passwd);
+    void passwordcheck(string uname, string passwd);
   private:
-    std::string password_log = "bigfoot";
+    string password_log = "bigfoot";
 };
 
 //check the password by comparing it to password_log
-void Auth::passwordcheck(std::string uname, std::string passwd) {
+void Auth::passwordcheck(string uname, string passwd) {
   if (passwd == password_log) {
-    std::cout << "User " << uname << " has successfully logged in." << std::endl;
+    cout << "User " << uname << " has successfully logged in." << endl;
   }
   else if (passwd != password_log) {
-    std::cout << "Incorrect password entered. Please restart the program and try again.";
+    cout << "Incorrect password entered. Please restart the program and try again.";
   }
 }
 
 int main() {
-  std::string u_auth, p_auth;
-  std::cout << "Enter your username" << std::endl;
-  std::cin >> u_auth;
-  std::cout << "Enter your password" << std::endl;
-  std::cin >> p_auth;
+  string u_auth, p_auth;
+  cout << "Enter your username" << endl;
+  cin >> u_auth;
+  cout << "Enter your password" << endl;
+  cin >> p_auth;
   Auth logon;
   logon.passwordcheck(u_auth, p_auth);
   return 0;
